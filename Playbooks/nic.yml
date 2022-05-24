@@ -11,6 +11,7 @@
              password: redhat123
              project_name: dev
            name: c6a4f299-5455-4d3c-bfac-c9710f89e8d0
+           boot_volume: c1e3fc82-95f4-4c0a-894c-e459497e3821
            nics:
              - net-id: 5af0e843-42ec-4f88-863f-0a356cb8c923
              - net-name: Test Network
