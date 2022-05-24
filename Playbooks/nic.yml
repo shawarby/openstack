@@ -1,4 +1,7 @@
----
+- hosts: all
+  gather_facts: no
+  become: yes
+  tasks:
 - name: Create a new instance and attaches to a network and passes metadata to the instance
   openstack.cloud.server:
        state: present
