@@ -2,15 +2,15 @@
   gather_facts: no
   become: yes
   tasks:
-  - name: Create a new instance and attaches to a network and passes metadata to the instance
-    openstack.cloud.server:
-         state: present
-         auth:
-           auth_url: http://10.150.20.131/
-           username: admin
-           password: redhat123
-           project_name: dev
-         name: c6a4f299-5455-4d3c-bfac-c9710f89e8d0
-         nics:
-           - net-id: 5af0e843-42ec-4f88-863f-0a356cb8c923
-           - net-name: Test Network
+    - name: Create a new instance and attaches to a network and passes metadata to the instance
+      openstack.cloud.server:
+           state: present
+           auth:
+             auth_url: http://10.150.20.131/
+             username: admin
+             password: redhat123
+             project_name: dev
+           name: c6a4f299-5455-4d3c-bfac-c9710f89e8d0
+           nics:
+             - net-id: 5af0e843-42ec-4f88-863f-0a356cb8c923
+             - net-name: Test Network
